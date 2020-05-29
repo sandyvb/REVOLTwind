@@ -1,0 +1,18 @@
+
+ *.[oa]
+ *~
+*.jpg
+*.JPG
+*.png
+*.mp4
+*.svg
+*.pdf
+*.xml
+*.txt
+assets/*
+data/*
+easy-comment/*
+images/*
+pdfs/*
+videos/*
+scripts/*

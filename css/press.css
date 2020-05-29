@@ -1,0 +1,30 @@
+/* press */
+
+.downloads {
+    display: flex;
+    justify-content: center;
+}
+
+.downloads img {
+    height: 250px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.downloads img:hover {
+    opacity: .75;
+}
+
+figure {
+    display: inline-block;
+    font-size: .9rem;
+    line-height: 150%;
+}
+
+@media (max-width: 600px) {
+    .downloads {
+        flex-wrap: wrap;
+    }
+}
+
+

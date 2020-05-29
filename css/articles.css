@@ -1,0 +1,160 @@
+/*articles*/
+h2{
+  text-align: left;
+font-style: italic;
+}
+
+h5 {
+    font-size: 1rem;
+    font-style: italic;
+}
+
+img{
+  border-radius: 4px;
+  -webkit-box-shadow: 2px 2px 8px #0000004f;
+          box-shadow: 2px 2px 8px #0000004f;
+}
+
+nav img {
+  -webkit-box-shadow: 0px 0px 0px black;
+          box-shadow: 0px 0px 0px black;
+}
+
+.noshadow{
+  -webkit-box-shadow: 0px 0px 0px black;
+          box-shadow: 0px 0px 0px black;
+}
+
+.navbar,
+.navbar2 {
+  display: grid;
+  width: 100%;
+  grid-gap: 2px;
+  margin: 40px 0;
+}
+
+.navbar{
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.navbar2{
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.navbar button {
+  background: #D9D9D9;
+  color: #2e3141;
+  font-size: 1.05rem;
+  font-weight: 500;
+  text-decoration: none;
+  width: 100%;
+  height: 40px;
+}
+
+.navbar2 button {
+  background: #D9D9D9;
+  color: #2e3141;
+  font-size: 1.05rem;
+  font-weight: 500;
+  text-decoration: none;
+  width: 100%;
+  height: 65px;
+}
+
+.navbar2 button:hover,
+.navbar button:hover {
+  background-color: #06ff06;
+}
+
+.navbar2 button:disabled,
+.navbar button:disabled{
+  cursor: default;
+  background-color: grey;
+}
+
+.divline {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(217, 217, 217, 0.616);
+  margin: 30px auto;
+  -webkit-box-shadow: 2px 2px 2px #0000004f;
+          box-shadow: 2px 2px 2px #0000004f;
+}
+
+#articleContent img {
+    float: left;
+    margin-top: 10px;
+    margin-right: 20px;
+    max-width: 100%;
+}
+
+.windmap{
+  margin-left: 20px;
+}
+
+.fix-img {
+    margin-bottom: 50px;
+}
+
+.separator {
+    clear: both;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(217, 217, 217, 0.616);
+    margin: 50px auto;
+    -webkit-box-shadow: 2px 2px 2px #0000004f;
+            box-shadow: 2px 2px 2px #0000004f;
+}
+
+li a h2 {
+    color: #212121;
+    font-size: .75rem;
+    text-align: center;
+    text-transform: uppercase;
+    width: 95px;
+    line-height: 150%;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    top:0;
+    height:100vh;
+    left:0;
+    right:0;
+    z-index:-1;
+    background: url(../images/penss_overlay.jpg) center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@media (max-width: 700px) {
+  .navbar,
+  .navbar2{
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+  }
+  .navbar2 button{
+    height: 80px;
+    font-size: 14px;
+  }
+    #articleContent img {
+        width: 100%;
+        margin: 5px 0 20px 0;
+        float: none;
+        padding: 0;
+    }
+    .windmap{
+      margin: 0;
+    }
+    .fix-img{
+      margin: 0;
+    }
+    li a h2 {
+        font-size: .5rem;
+        width: 55px;
+        line-height: 120%;
+    }
+}

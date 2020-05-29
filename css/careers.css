@@ -1,0 +1,13 @@
+@media screen and (max-width: 500px) {
+    .career p {
+        margin-left: 0;
+    }
+
+    .career ul {
+        margin-left: 0;
+    }
+
+    .career button {
+        width: 200px;
+    }
+}

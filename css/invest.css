@@ -1,0 +1,152 @@
+/* invest */
+hr {
+    opacity: .7;
+}
+
+h5 {
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.maintitle {
+    font-size: 1.2rem;
+    text-align: left;
+    margin: 0;
+}
+
+#invest h6 {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+p {
+    margin-left: 30px;
+}
+
+ul {
+    margin-left: 30px;
+    text-align: left;
+}
+
+#invest {
+    padding: 0 20px;
+}
+
+button {
+    width: 40%;
+    height: 40px;
+    background-color: #12E312;
+    color: white;
+    font-size: 1.05rem;
+    font-weight: 500;
+
+}
+
+.affiliateBtn {
+    display: block;
+    margin: 0 auto;
+}
+
+.affiliateLink {
+    color: white;
+}
+
+.affiliateLink:hover {
+    color: #2e3141;
+}
+
+.affiliateP > p {
+    margin-left: 0;
+}
+
+button:hover {
+    background-color: #06ff06;
+    color: #2e3141;
+}
+
+.navbar {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 2px;
+    margin: 40px 0;
+}
+
+.navbar button {
+    background: #D9D9D9;
+    color: #2e3141;
+    font-size: 1.05rem;
+    font-weight: 500;
+    text-decoration: none;
+    width: 100%;
+    height: 40px;
+}
+
+.navbar button:hover {
+    background-color: #06ff06;
+}
+
+.navbar button:disabled {
+    cursor: default;
+    background-color: grey;
+}
+
+a {
+    text-decoration: none;
+}
+
+.divline {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(217, 217, 217, 0.616);
+    margin: 30px auto;
+    -webkit-box-shadow: 2px 2px 2px #0000004f;
+    box-shadow: 2px 2px 2px #0000004f;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: url(../images/invest.png) center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.contactbtn {
+    display: block;
+    width: 40%;
+    margin: 40px auto 20px auto;
+}
+
+@media (max-width: 600px) {
+
+    .navbar,
+    .navbar2 {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5px;
+    }
+
+    .contactbtn {
+        width: 70%;
+    }
+
+    #invest {
+        padding: 0;
+    }
+
+    #invest ul,
+    #invest p {
+        margin: 0;
+    }
+
+    #invest button {
+        width: 200px;
+    }
+}

@@ -1,0 +1,256 @@
+/* products */
+
+/*buy btn*/
+
+#buy:hover {
+  background-color: #06ff06;
+  color: #2e3141;
+  right: -4px;
+
+}
+
+#buy {
+  position: fixed;
+  top: 72px;
+  right: -60px;
+  z-index: 2;
+  height: 50px;
+  width: 115px;
+  font-size: 1.05rem;
+  font-weight: 500;
+  word-spacing: 5px;
+  -webkit-transition: right .5s;
+  -o-transition: right .5s;
+  transition: right .5s;
+  -webkit-box-shadow: -2px 2px 5px #0000004f;
+  box-shadow: -2px 2px 5px #0000004f;
+}
+
+/* header */
+.header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    width: 50%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+
+.logo {
+    width: 84%;
+    z-index: 4;
+    -webkit-animation: fadeup 3s .5s backwards;
+    animation: fadeup 3s .5s backwards;
+}
+
+.rotate {
+    -webkit-animation: rotation 6s infinite linear,
+        fadeup 3s .5s backwards;
+    animation: rotation 6s infinite linear,
+        fadeup 3s .5s backwards;
+    margin-right: 5px;
+    width: 16%;
+    shape-outside: url(../images/bolt.png);
+    shape-image-threshold: .5;
+    shape-margin: 10px;
+    -webkit-filter: drop-shadow(0px 0px 10px rgba(2, 2, 2, 0.3));
+    opacity: .9;
+    position: inline;
+    z-index: 4;
+}
+
+/*animations----------------------------------------------------*/
+
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+header > h1 {
+    display: none;
+}
+
+.header-line {
+    position: relative;
+    width: 50%;
+    max-width: 500px;
+    height: 2px;
+    background-color: rgba(217, 217, 217, 0.616);
+    margin: 8px auto;
+    -webkit-box-shadow: 2px 2px 2px #0000004f;
+    box-shadow: 2px 2px 2px #0000004f;
+    z-index: 2;
+    -webkit-animation: fadeup 2s .25s backwards;
+    animation: fadeup 2s .25s backwards;
+}
+
+button {
+  width: 40%;
+  height: 40px;
+  background-color: #12E312;
+  color: white;
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: #06ff06;
+  color: #2e3141;
+}
+
+.content-wrap {
+    /*    padding-top: 25px;*/
+    padding-bottom: 0;
+}
+
+aside {
+    margin-bottom: 50px;
+}
+
+#intro {
+    line-height: 200%;
+}
+
+.featureImg {
+    /* height: 320px; */
+}
+
+small {
+    font-size: .75;
+}
+
+/* Zoom images on products page */
+.mouseover{
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2px 1fr 2px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2px;
+  width: 100%;
+  margin: 0;
+}
+.mouseoverimg {
+  width: 100%;
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  -o-transition: transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+}
+
+.mouseoverimg:hover {
+    -webkit-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    transform: scale(1.25);
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
+}
+
+/*Ideal for...*/
+#ideal{
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  margin: 0;
+  width: 100%;
+}
+
+#ideal h5 {
+    margin-bottom: 5px;
+}
+
+.idealContent {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+}
+
+.idealContent p {
+  /* margin-top: 25px; */
+  padding: 20px;
+  height: 250px;
+  text-align: left;
+}
+
+.idealContent img {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.idealContent img.top:hover {
+  opacity: 0;
+}
+
+.fa {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 5rem;
+    text-align: center;
+}
+
+/*early adopeter*/
+.earlyAdopters img {
+    width: 100%;
+    border-radius: 2%;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px 0px;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 16px 0px;
+}
+
+
+@media screen and (max-width: 499px) {
+
+    .header {
+        width: 80%;
+    }
+
+    .header-line {
+        width: 80%;
+    }
+
+    #ideal{
+      -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+    }
+
+    .content-wrap {
+        padding: 25px;
+    }
+
+    button {
+      width: 49%;
+      height: 50px;
+    }
+}

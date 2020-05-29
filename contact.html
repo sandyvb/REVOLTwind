@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <title>Contact REVOLT Wind</title>
+    <meta name="description" content="Contact REVOLT Wind with your questions, comments, suggestions, questions, or concerns.">
+    <!-- add twitter cards, fb, etc -->
+    <!-- add google json markup info -->
+
+    <!--[if lt IE 9]>
+    <script src="scripts/html5shiv.js?crc=4241844378" type="text/javascript"></script>
+    <![endif]-->
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script defer src="https://kit.fontawesome.com/863328a640.js"></script>
+    <script src="/js/script.js"></script>
+</head>
+
+<body>
+
+    <!-- place navigation -->
+    <div id="navigation-menu"></div>
+
+    <div id="contact"></div>
+    <div class="feature-lg">
+        <main role="main">
+            <div class="content-wrap">
+                <h2 class="btm-bdr">Contact Us!</h2>
+                <div class="feature-med">
+
+                    <section>
+                        <div class="header">
+                            <img class="logo" src="images/buy/logo.png" />
+                        </div>
+
+                        <h3 id="thanks">Thank you!<br />
+                            Your message has been sent!</h3>
+                        <input type="button" onclick="javascript: history.go(-2);" value="Go Back" id="goback">
+
+                        <form id="contactForm" method="POST" name="contactForm" action="php\contact-handler.php" onsubmit="return validateForm()">
+
+                            <!-- Message -->
+                            <fieldset>
+                                <legend>Message</legend>
+                                <textarea id="message" name="message" placeholder="Your comments, suggestions or questions..."></textarea>
+                                <p>Invalid message!</p>
+                            </fieldset>
+
+                            <!-- Contact details -->
+                            <fieldset>
+                                <legend>Contact Info</legend>
+                                <input id="name" type="text" placeholder="Name" name="name" />
+                                <p>Name required</p>
+                                <input id="email" type="email" placeholder="Email" name="email" autocomplete="off" />
+                                <p>Valid email address required</p>
+                                <input id="phone" type="tel" placeholder="Phone number" name="phone" />
+                                <p>Phone number required</p>
+                            </fieldset>
+
+                            <!-- Preferred -->
+                            <p>How would you like to be contacted?</p>
+                            <select id="contactMethod" name="contactMethod">
+                                <option value="email">By email</option>
+                                <option value="phone">By telephone</option>
+                                <option value="noContact">Do not contact me</option>
+                            </select>
+
+                            <input type="submit" value="Submit" />
+                        </form>
+
+                    </section>
+                </div>
+            </div>
+            <!-- end content-wrap -->
+
+        </main>
+    </div>
+    <script type="text/javascript" src="/js/validation.js"></script>
+    <!-- validate form before submit -->
+    <script>
+        function validateForm() {
+            const message = document.getElementById('message');
+            const name = document.getElementById('name');
+            const email = document.getElementById('email');
+            const phone = document.getElementById('phone');
+
+
+            var x = message.value;
+            var y = name.value;
+            var z = email.value;
+            var p = phone.value;
+
+            if (x == "") {
+                message.className = 'invalid';
+                message.focus();
+                return false;
+            }
+            if (y == "") {
+                name.className = 'invalid';
+                name.focus();
+                return false;
+            }
+            if (z == "") {
+                email.className = 'invalid';
+                email.focus();
+                return false;
+            }
+            if (p == "") {
+                phone.className = 'invalid';
+                phone.focus();
+                return false;
+            }
+        }
+    </script>
+</body></html>
