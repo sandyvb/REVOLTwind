@@ -1,4 +1,4 @@
-
+#extensions and directories
  *.[oa]
  *~
 *.jpg
@@ -16,3 +16,7 @@ images/*
 pdfs/*
 videos/*
 scripts/*
+
+#individual files
+google8495c1545a36e1b6.html
+REVOLT Workspace.code-workspace
