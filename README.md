@@ -1,3 +1,3 @@
 # REVOLT Wind website
 
-HTML, CSS, JS, PHP
+HTML, CSS, JS, PHP, Reactjs
