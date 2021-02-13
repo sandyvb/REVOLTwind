@@ -1,10 +1,9 @@
 <script>
-    $(function() {
-        $("#burger-nav").on("click", function() {
+    $(function () {
+        $("#burger-nav").on("click", function () {
             $("nav ul").toggleClass("open");
         });
     });
-
 </script>
 
 <nav role="navigation">
@@ -13,7 +12,7 @@
     <a href="index.html" title="REVOLT WIND HOME"><img src="images/revolt_logo_ss.png"></a>
     <ul>
         <li><a href="index.html" title="REVOLT WIND HOME">HOME</a></li>
-        <li><a href="careers.html" title="Careers">CAREERS</a></li>
+        <!-- <li><a href="careers.html" title="Careers">CAREERS</a></li> -->
         <li class="dropdown"><a href="products.html" class="dropbtn">WINDMILLS <i class="fas fa-caret-down"></i></a>
             <div class="dropdown-content">
                 <a href="products.html" title="General Info">PRODUCTS</a>
@@ -32,11 +31,13 @@
             </div>
         </li>
 
-        <li class="dropdown"><a href="contact.html" class="dropbtn" id="contact-btn">CONTACT <i class="fas fa-caret-down down-arrow"></i></a>
+        <li class="dropdown"><a href="contact.html" class="dropbtn" id="contact-btn">CONTACT <i
+                    class="fas fa-caret-down down-arrow"></i></a>
             <div class="dropdown-content contactus" id="contact-info">
                 <a href="contact.html" title="Contact"><i class="far fa-envelope"></i> Stephen Cowap</a>
                 <a href="tel:+1-636-448-3205" title="Phone"><i class="fas fa-phone-alt"></i> 636-448-3205</a>
-                <a href="http://maps.google.com/?q=St Louis MO US" target="_blank" title="Map"><i class="fas fa-map-marker-alt"></i> St. Louis, MO</a>
+                <a href="http://maps.google.com/?q=St Louis MO US" target="_blank" title="Map"><i
+                        class="fas fa-map-marker-alt"></i> St. Louis, MO</a>
             </div>
         </li>
     </ul>
