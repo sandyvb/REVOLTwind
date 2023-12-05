@@ -70,7 +70,12 @@ h4 {
 }
 
 button {
-  border-radius: 4px;
+    border-radius: 4px;
+}
+
+a > button {
+    color: #2e3141;
+    font-weight: 500;
 }
 
 .hide {
@@ -204,6 +209,7 @@ a:hover {
 /* media queries ------------------------ */
 
 @media (min-width: 800px) {
+
     .feature {
         width: 48%;
         -webkit-box-pack: justify;
@@ -233,6 +239,7 @@ a:hover {
 }
 
 @media (max-width: 799px) {
+
     .feature {
         padding: 20px;
         border-radius: 2%;
@@ -270,7 +277,8 @@ a:hover {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
+
     button {
-      line-height: 100%;
+        line-height: 100%;
     }
 }

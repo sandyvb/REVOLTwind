@@ -20,7 +20,7 @@ button {
     width: 40%;
     height: 40px;
     background-color: #12E312;
-    color: white;
+    color: #2e3141;
     border-radius: 4px;
     font-size: 1.05rem;
     font-weight: 500;
@@ -186,7 +186,8 @@ select {
 input[type="submit"] {
     background: #12E312;
     padding: 10px;
-    color: white;
+    color: #2e3141;
+    font-weight: 500;
     font-size: 18px;
     border-radius: 4px;
     border: 0;
